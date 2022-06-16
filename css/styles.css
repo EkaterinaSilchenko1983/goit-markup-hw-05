@@ -8,6 +8,7 @@
     --general-background-color: #F5F4FA;
     --secondary-btn-color: #212121;
     --icon-color: #AFB1B8;
+    --timing-animation-function: cubic-bezier(0.4, 0, 0.2, 1)
     
 }
 
@@ -129,6 +130,8 @@ img {
      font-size: 14px;
      line-height: 1.14;
      letter-spacing: 0.02em;
+
+     transition: color 250ms var(--timing-animation-function);
  }
 
  .site-nav .link.current {
@@ -180,12 +183,12 @@ img {
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+
+    transition:color 250ms var(--timing-animation-function);
+
  }
  
- .site-contact .link:hover,
- .site-contact .link:focus {
-    color: var(--accent-color);
- }
+ 
 
 
 
@@ -417,6 +420,8 @@ margin-bottom: 10px;
     border-radius: 50%;
     background-color: var(--primary-white-color);
     color: var(--icon-color);
+    
+    transition: background-color 250ms var(--timing-animation-function), color 250ms var(--timing-animation-function);
 
 }
 .team-soc-icon {
@@ -450,6 +455,7 @@ color: var(--primary-white-color);
         border: 1px solid var(--icon-color);
         border-radius: 4px;
         color: var(--icon-color);
+        transition: color 250ms var(--timing-animation-function), border 250ms var(--timing-animation-function);
 }
 .clients-icon {
     fill: currentColor;
@@ -504,6 +510,8 @@ color: var(--primary-white-color);
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+
+    transition: color 250ms var(--timing-animation-function);
 }
 
 .link-address {
@@ -517,7 +525,9 @@ color: var(--primary-white-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    text-decoration: none; 
+    text-decoration: none;
+    
+    transition: color 250ms var(--timing-animation-function);
 }
 
 .no-margin.link {
@@ -529,6 +539,8 @@ color: var(--primary-white-color);
 .link-address:focus {
     color: var(--accent-color);
 }
+
+
 .footer-list .link:hover,
 .footer-list .link:focus {
     color: var(--accent-color);
@@ -578,6 +590,8 @@ color: var(--primary-white-color);
     background: rgba(255, 255, 255, 0.1);
     color: var(--icon-color);
 
+    transition: background-color 250ms var(--timing-animation-function), color 250ms var(--timing-animation-function) ;
+
 }
 
 .footer-soc-icon {
@@ -623,6 +637,8 @@ color: var(--primary-white-color);
     line-height: 1.62;
     letter-spacing: 0.03em;
     border: none;
+
+    transition: background-color 250ms var(--timing-animation-function), color 250ms var(--timing-animation-function), box-shadow 250ms var(--timing-animation-function);
 }
 
 .filter-btn:hover,
@@ -646,23 +662,27 @@ color: var(--primary-white-color);
     flex-basis: calc(100%/3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    cursor: pointer;
+    border: 1px solid #EEEEEE;
+    
+    transition: box-shadow 250ms var(--timing-animation-function);
 }
+
 
 .works-item .title {
     margin-bottom: 4px;
 }
 
-.works-item:hover {
-    border: 1px solid #EEEEEE;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
-}
 
+.works-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
+}
 
 
 .works-card {
 padding: 20px 24px;
-border: 1px solid #EEEEEE;
+
 }
 
 
